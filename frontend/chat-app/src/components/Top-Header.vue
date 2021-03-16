@@ -2,6 +2,7 @@
     <div>
       Logged in
       <span v-if="loggedIn">Yes</span>
+
       <span v-else>No</span>
       <div>
         <button @click="signOut">Sign Out</button>
@@ -46,5 +47,8 @@ import router from "@/router";
 </script>
 
 <style lang="scss" scoped>
-
+body{
+  background-color: #9b59b6;
+  margin: 0;
+}
 </style>

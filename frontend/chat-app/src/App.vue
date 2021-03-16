@@ -1,45 +1,56 @@
 <template>
-  <div id="app">
-    <top-header></top-header>
-    <div id="nav">
-      <router-link to="/about">About</router-link> |
-      <router-link to="/login">Login</router-link> |
-      <router-link to="/register">Register</router-link> |
-      <router-link to="/secret">Secret</router-link>
-      
+    <div id="app">
+      <navbar></navbar>
+
+
+      <!--
+      <div id="nav">
+        <router-link to="/about">About</router-link> |
+        <router-link to="/login">Login</router-link> |
+        <router-link to="/register">Register</router-link> |
+        <router-link to="/secret">Secret</router-link>
+      </div>
+      -->
+      <router-view/>
     </div>
-    <router-view/>
-  </div>
+
 </template>
 
 <script>
 import TopHeader from './components/Top-Header';
+import Navbar from "@/components/Navbar";
 export default {
   components: {
-    'top-header': TopHeader
+    Navbar,
     }
 }
 </script>
 
 <style lang="scss">
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 100%;
+  vertical-align: top;
+  align-self: baseline;
+  justify-content: center;
 }
 
-#nav {
-  padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+body{
+  background-color: #9b59b6;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+
 }
+
 </style>

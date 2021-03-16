@@ -37,7 +37,10 @@ export const signIn = (email, password) => {
         .get()
       alert('Welcome ' + user.nickname)
     })
-    .catch(error => console.error(error))
+    .catch(error => {
+      console.error(error);
+      alert(error);
+    })
 }
 
 /*
