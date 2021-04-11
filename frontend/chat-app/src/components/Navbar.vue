@@ -3,8 +3,8 @@
       <nav>
         <a @click="toLogin">Login</a>
         <a @click="toRegister">Register</a>
-        <a href="#">Rooms</a>
-        <a href="#">Create Room</a>
+        <a @click="toRooms">Rooms</a>
+        <a @click="toCreateRoom">Create Room</a>
         <a @click="Logout">Logout</a>
       </nav>
       <span v-if="loggedIn">You are logged in</span>
@@ -29,7 +29,14 @@ name: "Navbar",
         const data = firebase.auth().signOut();
         console.log(data);
         router.push('login')
+      },
+      toRooms(){
+        router.push({ path: 'Rooms' })
+      },
+      toCreateRoom(){
+        router.push({ path: 'createRoom' })
       }
+
   },
   created() {
     firebase.auth().onAuthStateChanged(user => {

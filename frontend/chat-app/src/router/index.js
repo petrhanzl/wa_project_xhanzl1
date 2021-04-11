@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '@/views/Home.vue'
 import Register from '../views/Register.vue'
 import Login from '../views/Login.vue'
 import Secret from '../views/Secret.vue'
+import Rooms from '../views/Rooms.vue'
+import createRoom from '../views/createRoom'
 
 import firebase from 'firebase';
 import 'firebase/auth';
@@ -15,7 +16,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Login
   },
   {
     path: '/register',
@@ -31,6 +32,18 @@ const routes = [
     path: '/secret',
     name: 'Secret',
     component: Secret,
+    meta:{requiersAuth: true}
+  },
+  {
+    path: '/rooms',
+    name: 'Rooms',
+    component: Rooms,
+    meta:{requiersAuth: true}
+  },
+  {
+    path: '/createRoom',
+    name: 'createRoom',
+    component: createRoom,
     meta:{requiersAuth: true}
   },
   {

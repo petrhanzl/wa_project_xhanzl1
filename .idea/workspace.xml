@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72a93326-9566-4f9a-a65b-f1f809c0f01c" name="Default Changelist" comment="" />
+    <list default="true" id="72a93326-9566-4f9a-a65b-f1f809c0f01c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/chat-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/chat-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/chat-app/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/chat-app/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/chat-app/src/api/handlers/rooms.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/chat-app/src/api/handlers/rooms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/chat-app/src/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/chat-app/src/components/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/chat-app/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/chat-app/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/chat-app/src/views/Home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/chat-app/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/chat-app/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/chat-app/src/views/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/chat-app/src/views/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/chat-app/src/views/Secret.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/chat-app/src/views/Secret.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +33,13 @@
     <bower-package value="" />
     <bower.json value="" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1ppd6dYmQNDjmNKZ93FU44d2tJQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="14.16.0" />
+    <property name="javascript.nodejs.core.library.configured.version" value="15.12.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.35" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -41,7 +58,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Bower" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="ts.external.directory.path" value="C:\Projects\Shit\vue+firebase\backend\fire-token\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -76,11 +93,27 @@
       <workItem from="1615884365753" duration="9527000" />
       <workItem from="1615901008786" duration="903000" />
       <workItem from="1615901951109" duration="12918000" />
+      <workItem from="1616618700652" duration="77000" />
+      <workItem from="1616632169674" duration="577000" />
+      <workItem from="1616633039806" duration="449000" />
+      <workItem from="1617371978391" duration="1725000" />
+      <workItem from="1618044405873" duration="5179000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
