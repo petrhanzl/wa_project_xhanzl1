@@ -1,9 +1,9 @@
 <template>
 
-    <div>
-      <navbar/>
-      Secret
-    </div>
+  <div>
+    <navbar/>
+    Rooms
+  </div>
 </template>
 
 <script>

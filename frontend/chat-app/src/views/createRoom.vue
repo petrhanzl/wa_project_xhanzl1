@@ -1,50 +1,52 @@
 <template>
+  <div>
+    <navbar/>
+    Rooms
     <div class="container">
-      <!--<div v-if="error" class="error">{{error.message}}</div>-->
+      <div v-if="error" class="error">{{error.message}}</div>
       <form class="form" @submit.prevent="pressed">
         <div class="header">
-          <h2>Login</h2>
+          <h2>Create Room</h2>
         </div>
         <div class="form-control">
-          <label>Email: </label>
-          <input type="email" placeholder="login" v-model="email">
+          <label>Name: </label>
+          <input type="text" v-model="name" placeholder="name of the room">
         </div>
-        <div class="form-control">
-          <label>Password: </label>
-          <input type="password" placeholder="password" v-model="password">
-        </div>
-        <button type="submit">Login</button>
+        <button type="submit" >Create Room</button>
       </form>
-      <h3>Don't have an account?</h3>
-      <button class="registerButton" @click="toRegister">Register</button>
     </div>
+  </div>
 </template>
 
 <script>
-import 'firebase/auth';
-import { signIn } from '@/api/handlers/users'
-import router from "@/router";
+import Navbar from "../components/Navbar";
+import {createRoom} from "../api/handlers/rooms"
+import router from "../router";
 
-    export default {
-        data() {
-          return {
-            email: '',
-            password: ''
-          }
-        },
-        methods: {
-          pressed(){
-            signIn(this.email, this.password);
-            router.push('secret')
-            .then()
-          },
-          toRegister(){
-            router.push({ path: 'Register' })
-          },
-        }
+
+export default {
+  components: {
+    Navbar,
+  },
+  methods: {
+    pressed(){
+      if (!this.name){
+        alert("Your room must have a name!")
+      } else {
+        createRoom(this.name);
+        alert("Room " + this.name + " created successfully!");
+        router.push('rooms');
+      }
+
     }
+  },
+  data() {
+    return{
+      name: '',
+    }
+  }
+}
 </script>
-
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
@@ -52,7 +54,6 @@ import router from "@/router";
 *{
   box-sizing: border-box;
 }
-
 .container{
   background-color: white;
   border-radius: 5px;
@@ -72,6 +73,7 @@ import router from "@/router";
 }
 .form{
   padding: 30px 40px;
+  position: relative;
 }
 .form-control{
   margin-bottom: 10px;
@@ -101,16 +103,6 @@ import router from "@/router";
   font-size: 16px;
   padding: 10px;
   width: 100%;
-}
-.registerButton{
-  background-color: #8e44ad;
-  border: 2px solid#8e44ad;
-  border-radius: 4px;
-  color: #fff;
-  font-family: inherit;
-  font-size: 14px;
-  padding: 2px;
-  width: 50%;
 }
 
 </style>

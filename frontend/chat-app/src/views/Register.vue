@@ -10,12 +10,12 @@
         <input type="email" v-model="email" placeholder="email">
       </div>
       <div class="form-control">
-        <label>Password: </label>
-        <input type="password" v-model="password" placeholder="password">
-      </div>
-      <div class="form-control">
         <label>Nickname: </label>
         <input type="text" v-model="nickname" placeholder="nickname">
+      </div>
+      <div class="form-control">
+        <label>Password: </label>
+        <input type="password" v-model="password" placeholder="password">
       </div>
       <button type="submit">Register</button>
     </form>
